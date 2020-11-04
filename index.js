@@ -4,8 +4,10 @@ const port = process.env.PORT || 3000;
 
 const handler = (req, res) => {
     console.log('Server received request 🔥🔥🔥');
+    console.log('Fake cstr ' + process.env.CONNECTION_STRING);
+    
     //res.end('Two - Hello World ' + process.env.CONNECTION_STRING);
-    figlet('Figlet Says - Hello World ' + process.env.CONNECTION_STRING, (err, data) => {
+    figlet('Hello Figlet World', (err, data) => {
         if (err) {
             console.log("Error: " + err);
             return;
