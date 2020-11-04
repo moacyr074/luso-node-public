@@ -1,12 +1,12 @@
 const http = require('http');
 const figlet = require('figlet');
 const port = process.env.PORT || 3000;
-
+const connStr = process.env.CONNECTION_STRING || "local connStr";
 const express = require('express')
 const app = express()
 
 app.get('/hello', (req, res) => {
-    res.send('Fake cstr ' + process.env.CONNECTION_STRING);
+    res.send('Fake cstr ' + connStr);
 })
 
 
