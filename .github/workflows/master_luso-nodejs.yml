@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'luso-nodejs'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c3493ee3c9a9404d9c8cd5c8a45b0728 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_66185fe329184f63993955672a231006 }}
         package: .
